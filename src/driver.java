@@ -16,6 +16,7 @@ public class driver {
         System.out.println("peek() result: "+tre.peek()); //test of peek method
         System.out.println("toString() test Expected: wow tree: Node{Char=*, freq=31}Node{Char=*, freq=13}Node{Char=*, freq=18}Node{Char=*, freq=6}Node{Char=*, freq=7}Node{Char=*, freq=8}Node{Char=*, freq=10}Node{Char=a, freq=3}Node{Char=*, freq=3}Node{Char=g, freq=3}Node{Char=*, freq=4}Node{Char=d, freq=4}Node{Char=*, freq=4}Node{Char= , freq=5}Node{Char=e, freq=5}\n");
         System.out.println("toString() result" + tre.toString()); //test of toString
+        System.out.println("checking that it doesn't destroy the original: "+tre.toString());
 
     }
 }
