@@ -79,8 +79,10 @@ public class HuffmanTree {
         while(q.peek()!=null){
             masterS += q.peek().toString();
             Node temp1 = q.poll();
-            q.add(temp1.getLeft());
-            q.add(temp1.getRight());
+            if(temp1.getLeft()!=null||temp1.getRight()!=null) {
+                q.add(temp1.getLeft());
+                q.add(temp1.getRight());
+            }
         }
         return masterS;
 
